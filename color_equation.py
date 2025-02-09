@@ -6,7 +6,7 @@ from io import BytesIO
 def main():
     st.title("Color Gradient Equation")
 
-    func_input = st.text_area("Enter function f(x) where x in [0, 1] as a Python expression:", "(x, x**2, np.sin(x*np.pi), 1)")
+    func_input = st.text_area("Enter function f(x) where x in [0, 1] for (red, green, blue, alpha) as a Python expression:", "(x, x**2, np.sin(x*np.pi), 1)")
 
     try:
         x_vals = np.linspace(0, 1, 256)
