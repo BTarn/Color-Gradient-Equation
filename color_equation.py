@@ -9,7 +9,7 @@ def main():
     func_input = st.text_area("Enter function f(x) where x in [0, 1] for (red, green, blue, alpha) as a Python expression:", "(x, x**2, np.sin(x*np.pi), 1)")
     generate_button = st.button("Generate Gradient")
     
-    if generate_button:
+    if generate_button or func_input:
 
         try:
             x_vals = np.linspace(0, 1, 256)
